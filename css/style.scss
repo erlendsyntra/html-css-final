@@ -3,16 +3,233 @@
 @use "./base/fonts";
 @use "./base/mixins" as *;
 
-/* style to color p icon red */
-p {
-  color: red;
+.container {
+  max-width: 144rem;
+  // background-color: red;
+  margin: 0 auto;
+  padding: 0 14rem;
 }
 
-/* style to implement icon within div via after */
-div::after {
-  content: "";
-  left: 0;
-  top: 0;
-  display: block;
-  @include icon("icon-checked", $green, 2rem);
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 2.917rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(218, 172, 0);
+  min-height: 12rem;
+  div {
+    padding: 3.3rem 0;
+    display: flex;
+    align-items: center;
+    min-height: 12rem;
+    color: $white;
+    a {
+      margin-right: auto;
+      img {
+        @include responsive;
+      }
+    }
+    ul {
+      display: flex;
+      li {
+        margin: 0 1.3rem;
+        a {
+          color: $white;
+          // font-size: 2.1rem;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          &:hover {
+            background-color: $turqoise;
+            border-radius: 2.5rem;
+            // color: $darkyellow;
+          }
+        }
+      }
+    }
+    form {
+      background-color: $yellow;
+      margin-left: 3.67rem;
+      display: flex;
+      align-items: center;
+      input {
+        height: 5.3rem;
+        max-width: 20rem;
+        border: none;
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 2.083rem;
+        background-color: $yellow;
+        outline: none;
+        border: none;
+        color: $white;
+        &::placeholder {
+          font-size: 2.1rem;
+          color: rgb(255 255 255 / 65%);
+        }
+      }
+      button {
+        height: 5.3rem;
+        width: 7.1rem;
+        border: none;
+        background-color: $white;
+        color: $turqoise;
+        font-size: 2.5rem;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          color: $white;
+          background-color: $turqoise;
+        }
+      }
+    }
+  }
+}
+
+.section_1 {
+  background-color: $yellow;
+  height: calc(100vh - 12rem);
+  .container {
+    display: flex;
+    .section_1_1 {
+      // max-width: 685px;
+      max-width: 60%;
+      margin-right: auto;
+      padding-top: 19.8rem;
+      padding-bottom: 19.8rem;
+      h1 {
+        font-size: 6.667rem;
+        font-weight: 600;
+        line-height: 8rem;
+        color: $white;
+        margin-bottom: 2.8rem;
+      }
+      p {
+        line-height: 3.5rem;
+        color: $white;
+        margin-bottom: 4.5rem;
+      }
+      a {
+        font-size: 2.083rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        line-height: 6.9rem;
+        height: 6.9rem;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 3.3rem;
+        border-radius: 7px;
+        border: 3px solid $white;
+        margin-right: 2.7rem;
+        &:hover,
+        &.active {
+          background-color: $turqoise;
+          border: 3px solid $turqoise;
+        }
+      }
+    }
+    .section_1_2 {
+      padding-top: 9rem;
+      img {
+        @include responsive;
+      }
+    }
+  }
+}
+.section_2 {
+  background-color: $white;
+  .container {
+    display: flex;
+    .section_2_1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 50%;
+      min-height: 80rem;
+      h2 {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 6rem;
+        // color: $white;
+        margin-bottom: 3.3rem;
+      }
+      p {
+        line-height: 3.5rem;
+        margin-bottom: 4.3rem;
+      }
+      a {
+        height: 6.9rem;
+        line-height: 6.9rem;
+        background-color: rgb(252, 195, 2);
+        display: block;
+        font-size: 2.083rem;
+        font-weight: 600;
+        color: $white;
+        text-decoration: none;
+        padding: 0 3rem;
+        border-radius: 7px;
+        align-self: flex-start;
+        &:hover {
+          background-color: $turqoise;
+        }
+      }
+    }
+    .section_2_2 {
+      padding-top: 14rem;
+      margin-left: auto;
+      .video {
+        position: relative;
+        a {
+          display: block;
+          .video-overlay {
+            position: relative;
+            width: 50.7rem;
+            height: 48rem;
+            background: linear-gradient(
+                rgb(252, 195, 2, 0.5),
+                rgb(252, 195, 2, 0.5)
+              ),
+              url(/images/image1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            &:after {
+              content: "";
+              width: 8.6rem;
+              height: 8.6rem;
+              background-color: $white;
+              border-radius: 50%;
+              position: absolute;
+              padding-top: 4.25rem;
+              padding-left: 4.5rem;
+              top: calc(50% - 4.3rem);
+              left: calc(50% - 4.3rem);
+            }
+          }
+          .icon {
+            position: absolute;
+            top: 47%;
+            left: 47%;
+            color: $yellow;
+            font-size: 3rem;
+          }
+        }
+        z-index: 0;
+        &:after {
+          content: "";
+          width: 25.1rem;
+          height: 20.7rem;
+          background-color: $yellow;
+          position: absolute;
+          bottom: -3.3rem;
+          left: -3.8rem;
+          z-index: -1;
+        }
+      }
+    }
+  }
 }

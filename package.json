@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview --open --host",
     "predeploy": "npm run build",
-    "deploy": "surge ./dist NewOriginalName.surge.sh"  },
+    "deploy": "surge ./dist html-css_final_erlend.surge.sh"  },
   "keywords": [],
   "author": "",
   "license": "ISC"

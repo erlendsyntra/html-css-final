@@ -10,6 +10,18 @@
   background-color: $color;
 }
 
+@mixin responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// @mixin container {
+//   max-width: 144rem;
+//   margin: 0 auto;
+//   padding: 0 14rem;
+// }
+
 // @mixin regular($fz: 2.1rem, $lh: 3.3rem, $c: blue) {
 //   font-family: "Roboto", sans-serif;
 //   font-weight: 400;

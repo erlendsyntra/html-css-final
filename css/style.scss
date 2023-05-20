@@ -5,7 +5,6 @@
 
 .container {
   max-width: 144rem;
-  // background-color: red;
   margin: 0 auto;
   padding: 0 14rem;
 }
@@ -38,14 +37,14 @@ header {
         margin: 0 1.3rem;
         a {
           color: $white;
-          // font-size: 2.1rem;
           font-weight: 500;
           text-decoration: none;
           padding: 0.5rem 1rem;
+          border-radius: 2.5rem;
+          transition: all 300ms;
           &:hover {
             background-color: $turqoise;
             border-radius: 2.5rem;
-            // color: $darkyellow;
           }
         }
       }
@@ -77,14 +76,18 @@ header {
         height: 5.3rem;
         width: 7.1rem;
         border: none;
-        background-color: $white;
-        color: $turqoise;
+        background-color: $turqoise;
+        color: $white;
         font-size: 2.5rem;
         outline: none;
         cursor: pointer;
         &:hover {
-          color: $white;
-          background-color: $turqoise;
+          color: $turqoise;
+          background-color: $white;
+          svg {
+            transition: all 0.65s;
+            transform: rotateY(360deg);
+          }
         }
       }
     }
@@ -126,6 +129,7 @@ header {
         border-radius: 7px;
         border: 3px solid $white;
         margin-right: 2.7rem;
+        transition: all 300ms;
         &:hover,
         &.active {
           background-color: $turqoise;
@@ -174,6 +178,7 @@ header {
         padding: 0 3rem;
         border-radius: 7px;
         align-self: flex-start;
+        transition: all 300ms;
         &:hover {
           background-color: $turqoise;
         }
@@ -219,9 +224,14 @@ header {
           }
           &:hover {
             .video-overlay {
-              &:after {
-                background-color: $turqoise;
-              }
+              background: linear-gradient(
+                  rgb(0, 190, 201, 0.5),
+                  rgb(0, 190, 201, 0.5)
+                ),
+                url(/images/image1.png);
+            }
+            .icon {
+              color: $turqoise;
             }
           }
         }
@@ -334,9 +344,14 @@ header {
           }
           &:hover {
             .video-overlay {
-              &:after {
-                background-color: $turqoise;
-              }
+              background: linear-gradient(
+                  rgb(0, 190, 201, 0.5),
+                  rgb(0, 190, 201, 0.5)
+                ),
+                url(/images/image5.png);
+            }
+            .icon {
+              color: $turqoise;
             }
           }
         }
@@ -364,7 +379,6 @@ header {
         font-size: 5rem;
         font-weight: 600;
         line-height: 6rem;
-        // color: $white;
         margin-bottom: 3.3rem;
         text-align: right;
       }
@@ -385,6 +399,7 @@ header {
         padding: 0 3rem;
         border-radius: 7px;
         align-self: flex-end;
+        transition: all 300ms;
         &:hover {
           background-color: $turqoise;
         }
@@ -447,9 +462,9 @@ header {
           padding: 0 4.5rem;
           border-radius: 2.8rem;
           color: $white;
+          transition: all 300ms;
           &:hover {
             background-color: $white;
-            border: 1px solid $white;
             color: $turqoise;
           }
         }
@@ -523,6 +538,10 @@ header {
               transition: all 300ms;
               &:hover {
                 background-color: $turqoise;
+                svg {
+                  transition: all 0.65s;
+                  transform: rotateY(360deg);
+                }
               }
             }
           }
@@ -532,7 +551,6 @@ header {
   }
 }
 .section_7 {
-  // background-color: $yellow;
   height: 100%;
   width: 100%;
   background: linear-gradient(rgb(252, 195, 2, 0.8), rgb(252, 195, 2, 0.8)),
@@ -735,6 +753,10 @@ footer {
           &:hover {
             color: $yellow;
             background-color: $white;
+            svg {
+              transition: all 0.65s;
+              transform: rotateY(360deg);
+            }
           }
         }
       }
@@ -761,6 +783,10 @@ footer {
             &:hover {
               background-color: $turqoise;
               color: $white;
+              svg {
+                transition: all 0.65s;
+                transform: rotateY(360deg);
+              }
             }
           }
         }

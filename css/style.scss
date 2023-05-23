@@ -794,3 +794,229 @@ footer {
     }
   }
 }
+@media screen and (orientation: portrait) {
+  .section_1 {
+    height: 85rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0px 6rem;
+  }
+
+  .section_1 .container .section_1_1 {
+    padding-top: 12.8rem;
+  }
+
+  .section_1 .container .section_1_2 img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 2.5rem;
+  }
+  .container {
+    padding: 0px 3rem;
+  }
+
+  header div ul li {
+    margin: 0 0.5rem;
+  }
+
+  header div form {
+    margin-left: 2rem;
+  }
+
+  header div form input,
+  header div form button {
+    height: 4.3rem;
+  }
+
+  .section_1 .container .section_1_1 {
+    padding-top: 15.8rem;
+    padding-bottom: 15.8rem;
+  }
+
+  .section_1 .container .section_1_2 img {
+    width: 85%;
+  }
+
+  .section_2 .container .section_2_1,
+  .section_4 .container .section_4_2 {
+    min-height: 70rem;
+  }
+
+  .section_2 .container .section_2_2,
+  .section_4 .container .section_4_1 {
+    padding-top: 10rem;
+  }
+  .section_3 .container .cards .card h3 {
+    font-size: 3.3rem;
+  }
+
+  .section_3 .container .cards .card p {
+    font-size: 2.3rem;
+  }
+
+  .section_3 .container,
+  .section_5 .container,
+  .section_6 .container,
+  .section_7 .container,
+  .section_8 .container,
+  footer .container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  footer .container .right form input {
+    height: 7rem;
+    min-width: 30.6rem;
+  }
+
+  footer .container .right form button {
+    height: 7rem;
+    width: 13.4rem;
+  }
+
+  footer .container p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  :root {
+    font-size: 55%;
+  }
+  .section_1 .container .section_1_1 {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    max-width: 50%;
+  }
+
+  .section_3 .container,
+  .section_5 .container,
+  .section_6 .container,
+  .section_7 .container,
+  .section_8 .container,
+  footer .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .section_3 .container h2,
+  .section_5 .container h2,
+  .section_6 .container h2,
+  .section_8 .container h2 {
+    margin-bottom: 3.2rem;
+  }
+
+  .section_3 .container p,
+  .section_5 .container p,
+  .section_6 .container p,
+  .section_8 .container p {
+    margin-bottom: 7.5rem;
+  }
+  footer .container .right {
+    margin-top: 0;
+  }
+
+  footer .container .right form input {
+    height: 6rem;
+    min-width: 22rem;
+  }
+
+  footer .container .right form button {
+    height: 6rem;
+    width: 10rem;
+    font-size: 3rem;
+  }
+
+  footer .container p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  :root {
+    font-size: 45%;
+  }
+  .section_1 .container .section_1_1 {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    max-width: 50%;
+  }
+
+  .section_2 .container .section_2_2,
+  .section_4 .container .section_4_1 {
+    padding-top: 10rem;
+  }
+
+  .section_2 .container .section_2_1,
+  .section_4 .container .section_4_2 {
+    min-height: 60rem;
+  }
+
+  .section_2 .container .section_2_2 .video a .video-overlay,
+  .section_4 .container .section_4_1 .video a .video-overlay {
+    width: 40rem;
+    height: 38.4rem;
+  }
+
+  .section_3 .container .cards {
+    gap: 3rem;
+  }
+  .section_3 .container,
+  .section_5 .container,
+  .section_6 .container,
+  .section_7 .container,
+  .section_8 .container,
+  footer .container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .section_3 .container h2,
+  .section_5 .container h2,
+  .section_6 .container h2,
+  .section_8 .container h2 {
+    margin-bottom: 2.2rem;
+  }
+
+  .section_3 .container p,
+  .section_5 .container p,
+  .section_6 .container p,
+  .section_8 .container p {
+    margin-bottom: 6.5rem;
+    max-width: 80%;
+  }
+  footer .container .right {
+    margin-top: 0;
+  }
+
+  footer .container .right form input {
+    height: 5rem;
+    min-width: 20rem;
+  }
+
+  footer .container .right form button {
+    height: 5rem;
+    width: 10rem;
+    font-size: 2.3rem;
+  }
+
+  footer .container p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-height: 420px) {
+  .section_1 {
+    height: 85rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  :root {
+    font-size: 55%;
+  }
+}

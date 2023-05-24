@@ -12,7 +12,7 @@
     <header>
       <div class="container">
         <a href="#"><img src="./images/logo.png" alt="company logo" /></a>
-        <nav>
+        <nav class="no-mobile">
           <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="#">About</a></li>
@@ -28,6 +28,11 @@
             </svg>
           </button>
         </form>
+        <a href="#" class="mobile">
+          <svg class="icon">
+            <use href="/icons/icons.svg#icon-menu" />
+          </svg>
+        </a>
       </div>
     </header>
     <main>
@@ -39,8 +44,10 @@
               Lorem Ipsum available but the majority have suffered alteration in
               some form, by injected humour randomised words.
             </p>
-            <a href="#" class="active">Contact Us</a>
-            <a href="#">Our Service</a>
+            <div class="buttons">
+              <a href="#" class="active">Contact Us</a>
+              <a href="#">Our Service</a>
+            </div>
           </div>
           <div class="section_1_2">
             <img src="./images/dog.png" alt="sitting dog" />
